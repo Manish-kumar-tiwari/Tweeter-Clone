@@ -1,0 +1,7 @@
+/* Media Query
+
+@media screen and (max-width: 600) {
+       tweet{
+          width: 100% !important;
+       }
+} */
