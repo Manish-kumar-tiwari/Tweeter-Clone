@@ -96,11 +96,11 @@ const Tweet = ({ tweet }) => {
           <Link to={`/comment/${tweet?._id}`}>
             <p className="text-2xl text-white">{tweet?.description}</p>
             {tweet?.image && (
-              <div className="w-full py-3 h-[600px]">
+              <div className="w-full py-3 h-[600px] max-[800px]:h-[400px]">
                 <img
                   src={tweet?.image}
                   alt="post"
-                  className="rounded-md w-full h-[600px]"
+                  className="rounded-md w-full h-[600px]  max-[800px]:h-[400px]"
                 />
               </div>
             )}

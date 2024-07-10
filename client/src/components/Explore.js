@@ -8,8 +8,8 @@ const Explore = () => {
   const { totalTweets } = useSelector((store) => store.tweet);
   const [search, setSearch] = useState("");
   return (
-    <div className="w-[50%] border border-gray-900">
-      <div className="flex w-full bg-gray-500 p-3 rounded-full mt-2">
+    <div className="w-[50%] ml-14 max-[800px]:w-[95%] border border-gray-900">
+      <div className="flex w-full bg-gray-500 p-4 rounded-full mt-2">
         <CiSearch color="white" size={"34px"} />
         <input
           

@@ -34,7 +34,7 @@ const Notification = () => {
   };
 
   return (
-    <div className="w-[50%] border border-gray-900">
+    <div className="w-[50%] ml-14 max-[800px]:w-[95%] border border-gray-900">
       <div className="border-b border-gray-700 text-center p-2">
         <h1 className="text-6xl text-white font-bold">Notification</h1>
       </div>

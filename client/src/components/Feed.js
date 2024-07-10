@@ -12,7 +12,7 @@ const Feed = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className=" w-[50%]  border-l border-t border-r border-gray-900 h-auto ">
+    <div className="ml-14 w-[50%] max-[800px]:w-[95%] border-l border-t border-r border-gray-900 h-auto  ">
       <div className="flex justify-evenly  border-b border-gray-900  ">
         <div
           onClick={() => {
@@ -33,7 +33,7 @@ const Feed = () => {
             following && "border-b-4 border-blue-600 "
           }`}
         >
-          <h1 className="text-xl font-semibold text-white ">Followiing</h1>
+          <h1 className="text-xl font-semibold text-white ">Following</h1>
         </div>
       </div>
 

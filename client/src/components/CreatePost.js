@@ -88,7 +88,7 @@ const CreatePost = () => {
         </div>
 
         <div
-          className={`justify-between flex my-4 px-4 items-center ${
+          className={`justify-between flex my-4 px-4 items-center max-[800px]:mt-16 ${
             post ? "mt-24" : "mt-16"
           }`}
         >

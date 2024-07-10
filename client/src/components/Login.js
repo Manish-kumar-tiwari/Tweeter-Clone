@@ -59,8 +59,8 @@ const Login = () => {
   };
 
   return (
-    <div className="flex w-screen h-screen justify-center items-center">
-      <div className="flex justify-evenly w-[80%]">
+    <div className=" flex w-screen h-screen justify-center items-center">
+      <div className="min-[800px]:flex justify-evenly w-[80%]">
         <div className="w-[60%]">
           <img color="white" width={"80%"} src="logo.webp" alt="twitter-logo" />
         </div>

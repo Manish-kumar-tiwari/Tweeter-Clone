@@ -8,10 +8,10 @@ import useGetAllTweets from "./hooks/useGetAllTweets";
 import useGetFollowingTweets from "./hooks/useGetFollowingTweets";
 
 const Home = () => {
- document.title = "Home / X"
-  const navigate=useNavigate();
+  document.title = "Home / X";
+  const navigate = useNavigate();
 
-  useEffect(()=>{
+  useEffect(() => {
     if (!localStorage.getItem("token")) {
       navigate("/login");
     }
@@ -23,9 +23,14 @@ const Home = () => {
 
   return (
     <div className="w-[90%] h-[90%] mx-auto flex justify-center p-4">
-      <LeftSidebar  />
-      <Outlet />
-      <RightSidebar />
+    
+        <LeftSidebar />
+     
+        <Outlet />
+      
+      <div className="max-[800px]:hidden ">
+        <RightSidebar />
+      </div>
     </div>
   );
 };

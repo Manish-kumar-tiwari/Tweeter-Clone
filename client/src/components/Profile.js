@@ -70,7 +70,7 @@ const Profile = () => {
   };
 
   return (
-    <div className="w-[50%] border border-gray-900">
+    <div className="w-[50%] border border-gray-900 ml-14 max-[800px]:w-full ">
       <div className="flex items-center">
         <Link to={"/"} onClick={goBackHandler} className="p-2 hover:bg-gray-900 rounded-full">
           <IoMdArrowBack color="white" size={"34px"} />

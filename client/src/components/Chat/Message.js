@@ -32,9 +32,9 @@ const Message = ({ message }) => {
               </div>
             </div>
             <div className="chat-header ml-2">
-              <time className="text-sm text-white opacity-50 ">12:45</time>
+              {/* <time className="text-sm text-white opacity-50 ">12:45</time> */}
             </div>
-            <div className="chat-bubble text-xl p-4 ">{message?.message}</div>
+            <div className={`chat-bubble text-xl p-4 ${ user?._id === message.senderId ? "bg-slate-700" : ""}`} >{message?.message}</div>
           </div>
         </div>
       )}

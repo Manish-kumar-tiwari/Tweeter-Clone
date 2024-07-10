@@ -39,7 +39,7 @@ const FollowedFollowing = () => {
   const { followerUser, followingUser } = useSelector((store) => store.user);
 
   return (
-    <div className="w-[50%] border border-gray-900">
+    <div className="w-[50%] ml-14 max-[800px]:w-[95%] border border-gray-900">
       <div className="flex justify-around border border-gray-600  ">
         <div
           onClick={() => setFollowing(true)}
