@@ -68,10 +68,10 @@ const LeftSidebar = () => {
   const { user } = useSelector((store) => store.user);
   return (
     <div
-      className="w-[20%] absolute left-10  mt-2"
+      className="w-[20%]   absolute max-[800px]:bottom-0 max-[800px]:left-0 left-10 max-[800px]:px-4  mt-2"
       style={{ position: "fixed" }}
     >
-      <div className="mx-2 max-[800px]:mx-1">
+      <div className="mx-2 max-[800px]:hidden">
         <img
           width={"40px"}
           src="https://freelogopng.com/images/all_img/1690643591twitter-x-logo-png.png"
@@ -79,7 +79,7 @@ const LeftSidebar = () => {
         />
       </div>
 
-      <div className="my-4">
+      <div className="my-4 max-[800px]:bg-gray-900 max-[800px]:px-4 max-[800px]:flex max-[800px]:absolute max-[800px]:bottom-1">
         <Link
           onClick={() => setBar("home")}
           to={"/"}
@@ -190,11 +190,11 @@ const LeftSidebar = () => {
           {post && <CreatePostDialog />}
         </div>
 
-        <div className="relative flex cursor-pointer items-center mt-[5%] rounded-full min-[800px]:hover:bg-slate-800  ">
+        <div className="relative max-[800px]:hidden flex cursor-pointer items-center mt-[5%] rounded-full min-[800px]:hover:bg-slate-800  ">
           <div className="p-3 max-[800px]:p-1 max-[800px]:w-5">
             <Avatar src={user?.avatar} size="54px" round={true} />
           </div>
-          <div className="p-3 max-[800px]:hidden ">
+          <div className="p-3  ">
             <h1 className="font-semibold text-2xl text-white">{user?.name}</h1>
             <p className="text-lg  text-gray-600">{`@${user?.username}`}</p>
           </div>

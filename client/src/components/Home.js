@@ -22,7 +22,7 @@ const Home = () => {
   useGetFollowingTweets();
 
   return (
-    <div className="w-[90%] h-[90%] mx-auto flex justify-center p-4">
+    <div className="w-[90%] max-[800px]:w-[100%] h-[90%] mx-auto flex justify-center max-[800px]:p-0 p-4">
     
         <LeftSidebar />
      

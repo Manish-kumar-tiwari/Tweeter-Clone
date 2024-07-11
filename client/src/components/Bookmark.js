@@ -9,7 +9,7 @@ const Bookmark = () => {
     return;
   }
   return (
-    <div className="w-[50%] ml-14 max-[800px]:w-[95%] border border-gray-900">
+    <div className="w-[50%] ml-14  max-[800px]:ml-0 max-[800px]:w-[100%]  border border-gray-900">
       <div className="border-b border-gray-800 p-5">
         <h1 className="font-bold text-3xl text-white">Bookmarks</h1>
         <p className="text-gray-400  text-2xl">@manish</p>

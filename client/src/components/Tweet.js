@@ -86,21 +86,21 @@ const Tweet = ({ tweet }) => {
           <div className="flex items-center">
             <Link
               to={`/profile/${tweet?.userDetails[0]?._id}`}
-              className="font-bold text-2xl text-white"
+              className="font-bold max-[800px]:text-sm max-[800px]:font-semibold  text-2xl text-white"
             >
               {tweet?.userDetails[0]?.name}
             </Link>
-            <p className="text-xl text-gray-500 ml-1">{`@${tweet?.userDetails[0]?.username} .1m`}</p>
+            <p className="text-xl max-[800px]:text-sm text-gray-500 ml-1">{`@${tweet?.userDetails[0]?.username} .1m`}</p>
           </div>
 
           <Link to={`/comment/${tweet?._id}`}>
             <p className="text-2xl text-white">{tweet?.description}</p>
             {tweet?.image && (
-              <div className="w-full py-3 h-[600px] max-[800px]:h-[400px]">
+              <div className="w-full py-3 h-[600px] max-[800px]:h-[300px]">
                 <img
                   src={tweet?.image}
                   alt="post"
-                  className="rounded-md w-full h-[600px]  max-[800px]:h-[400px]"
+                  className="rounded-md w-full h-[600px]  max-[800px]:h-[300px]"
                 />
               </div>
             )}

@@ -12,7 +12,7 @@ const Feed = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className="ml-14 w-[50%] max-[800px]:w-[95%] border-l border-t border-r border-gray-900 h-auto  ">
+    <div className="ml-14 max-[800px]:ml-0 max-[800px]:w-[100%] w-[50%]  border-l border-t border-r border-gray-900 h-auto  ">
       <div className="flex justify-evenly  border-b border-gray-900  ">
         <div
           onClick={() => {

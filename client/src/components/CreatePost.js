@@ -78,7 +78,7 @@ const CreatePost = () => {
           <div className="w-full ">
             <input
               value={description}
-              className={`text-3xl border-none outline-none bg-black
+              className={`text-3xl max-[800px]:text-sm border-none outline-none bg-black
               text-white  px-4 w-full`}
               type="text"
               placeholder="What is Happenning?!"
@@ -123,7 +123,7 @@ const CreatePost = () => {
               <div className="absolute emoji">
                 <EmojiPicker
                   height={450}
-                  width={300}
+                  width={280}
                   theme="dark"
                   onEmojiClick={(e) => {
                     setDescription(description + e.emoji);
