@@ -13,7 +13,7 @@ const Messages = () => {
     return;
   }
   return (
-    <div className="p-3 w-full h-[80%] overflow-auto">
+    <div className="p-3 w-full h-[80%] overflow-auto max-[800px]:px-0">
       {messages &&
         messages?.map((message, idx) => {
           return <Message message={message} key={idx} />;

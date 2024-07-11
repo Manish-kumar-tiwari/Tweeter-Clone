@@ -78,7 +78,7 @@ const CreatePost = () => {
           <div className="w-full ">
             <input
               value={description}
-              className={`text-3xl max-[800px]:text-sm border-none outline-none bg-black
+              className={`text-3xl max-[800px]:text-2xl border-none outline-none bg-black
               text-white  px-4 w-full`}
               type="text"
               placeholder="What is Happenning?!"
@@ -88,7 +88,7 @@ const CreatePost = () => {
         </div>
 
         <div
-          className={`justify-between flex my-4 px-4 items-center max-[800px]:mt-16 ${
+          className={`justify-between flex my-4 px-4 items-center max-[800px]:mt-3 ${
             post ? "mt-24" : "mt-16"
           }`}
         >

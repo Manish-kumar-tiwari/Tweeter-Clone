@@ -6,7 +6,7 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 import { setSelectedUser } from "../redux/userSlice";
 
 const MessageContainer = () => {
-  const { selectedUser, user , onlineUser } = useSelector((store) => store.user);
+  const { selectedUser, user, onlineUser } = useSelector((store) => store.user);
   const dispatch = useDispatch();
 
   const goBackHandler = () => {
@@ -18,16 +18,20 @@ const MessageContainer = () => {
   return (
     <>
       {selectedUser && (
-        <div className=" max-[800px]:w-[100%] w-[70%] h-svh  px-4">
-          <div className="w-full px-4 py-1  bg-slate-600 h-20  rounded-md flex items-center mt-7 ">
+        <div className=" max-[800px]:w-[100%] w-[70%] h-svh max-[800px]:px-0  px-4">
+          <div className="w-full px-4 py-1  max-[800px]:px-0  bg-slate-600 h-20  rounded-md flex items-center mt-7 ">
             <IoIosArrowRoundBack
               onClick={goBackHandler}
               size={"44px"}
               className="hover:bg-slate-500 rounded-full mr-2   min-[800px]:hidden"
             />
 
-            <div className="flex gap-2 items-center  rounded-r-md ">
-              <div className={`avatar ${isOnline && "online"}  w-12 h-12 rounded-full `}>
+            <div className="flex gap-2 items-center  rounded-r-md  ">
+              <div
+                className={`avatar ${
+                  isOnline && "online"
+                }  w-12 h-12 rounded-full `}
+              >
                 <img
                   src={selectedUser?.avatar}
                   alt="profile-pic"
@@ -46,7 +50,7 @@ const MessageContainer = () => {
           </div>
 
           <Messages />
-          <div className="max-[800px]:w-[85%] absolute w-[65%] bottom-1 ml-8">
+          <div className="max-[800px]:w-[100%] max-[800px]:ml-0 absolute w-[65%] bottom-1 ml-8">
             <Search />
           </div>
         </div>

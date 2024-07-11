@@ -40,7 +40,7 @@ const Search = () => {
           <input
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="w-full bg-zinc-700 py-4 px-3 border-none outline-none text-2xl rounded-xl text-white"
+            className="w-full bg-zinc-700 py-4 px-3  border-none outline-none text-2xl rounded-xl text-white"
             type="text"
             placeholder="Send a message..."
           />

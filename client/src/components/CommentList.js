@@ -84,7 +84,7 @@ const CommentList = () => {
   };
 
   return (
-    <div className="w-[50%] border border-gray-900">
+    <div className="w-[50%] border   max-[800px]:ml-0 max-[800px]:w-[100%] max-[800px]:mb-16 border-gray-900">
       {singleTweets && (
         <div>
           <div className="flex items-center">
@@ -167,7 +167,7 @@ const CommentList = () => {
                   <div className="absolute emoji">
                     <EmojiPicker
                       height={450}
-                      width={300}
+                      width={260}
                       theme="dark"
                       onEmojiClick={(e) => {
                         setPost(post + e.emoji);
@@ -211,10 +211,10 @@ const CommentList = () => {
 
                       <div className="ml-5">
                         <div className="flex items-center">
-                          <h1 className="text-white text-2xl ">
+                          <h1 className="text-white   text-2xl max-[800px]:text-xl ">
                             {comment.name}
                           </h1>
-                          <h1 className="text-gray-400 text-xl ml-2">
+                          <h1 className="text-gray-400 text-xl ml-2 max-[800px]:text-sm max-[800px]:ml-2">
                             @{comment.username} .1m
                           </h1>
                         </div>

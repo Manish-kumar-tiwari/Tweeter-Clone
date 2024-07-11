@@ -21,7 +21,7 @@ const Sidebar = () => {
     <div
       className={` ${
         selectedUser && "max-[800px]:hidden "
-      } max-[800px]:w-full border-r-2 border-gray-200 w-[30%] h-svh  `}
+      } max-[800px]:w-full max-[800px]:border-r-0 border-r-2 border-gray-200 w-[30%] h-svh  `}
     >
       <div className="flex w-full rounded-full bg-gray-500 items-center p-1 mt-7">
         <FaSearch size={"34px"} className="px-1" color="white" />

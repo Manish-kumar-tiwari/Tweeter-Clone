@@ -19,7 +19,7 @@ const ChatHomepage = () => {
 
   return (
     <div className="w-full h-svh flex items-center justify-center">
-      <div className="flex  w-[100%]  bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100 p-3 px-5 ">
+      <div className="flex  w-[100%]  bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100 p-3 max-[800px]:p-1 px-5 ">
         <Sidebar />
         <MessageContainer />
       </div>
